@@ -1,0 +1,5 @@
+syntax="proto3";
+option Message="Message";
+message Message_Message{
+   string message=1;
+}
