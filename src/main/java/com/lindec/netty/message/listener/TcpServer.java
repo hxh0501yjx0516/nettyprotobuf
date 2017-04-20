@@ -13,13 +13,11 @@ import io.netty.util.CharsetUtil;
 
 
 /**
- * Created by lindec on 2016/3/5 17:26.
+ * @author xuanha.hu
+ * Created by win7 on 2017/3/30.
  */
-
 public class TcpServer {
 
-    private static final String IP = "127.0.0.1";
-    private static final int PORT = 8999;
     /**
      * 用于分配处理业务线程的线程组个数
      */

@@ -14,14 +14,11 @@ import io.netty.util.CharsetUtil;
 //import io.netty.channel.*;
 
 /**
- * Created by lindec on 2016/3/5 17:29.
+ * @author xuanha.hu
+ * Created by win7 on 2017/3/30.
  */
 public class TcpClient {
-    public static String HOST = "127.0.0.1";
-    public static int PORT = 8999;
 
-//    public static ServerBootstrap bootstrap = getBootstrap();
-//    public static ChannelFuture channel = getChannel(HOST,PORT);
     /**
      * 初始化Bootstrap
      * @return
@@ -51,22 +48,9 @@ public class TcpClient {
         }finally {
             group.shutdownGracefully();
         }
-//        return b;
     }
 
-//    public static final ChannelFuture getChannel(String host,int port){
-//        ChannelFuture channel = null;
-//        try {
-//            channel = bootstrap.bind(host, port).sync();
-//            channel.channel().closeFuture().sync();
-//        } catch (Exception e) {
-//            System.out.println("连接Server(IP[%s],PORT[%s])失败"+ host+":"+port+"----:"+e);
-//            return null;
-//        }finally {
-//
-//        }
-//        return channel;
-//    }
+
 
     public   void sendMsg(String msg) throws Exception {
        new TcpClient().getBootstrap("127.0.0.1",10020);
@@ -76,8 +60,6 @@ public class TcpClient {
 
         new TcpClient().getBootstrap("127.0.0.1",10020);
 
-//        System.err.println(173284013/1000/1000+"    "+173085445/1000/1000  );
-//        System.err.println(47844878/1000/1000+"    "+47071126 /1000/1000  );
-//        System.err.println(161648043/1000/1000+"    "+161434426/1000/1000  );
+
     }
 }

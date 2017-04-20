@@ -4,7 +4,8 @@ import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 
 /**
- * Created by lindec on 2016/3/5 17:28.
+ * @author xuanha.hu
+ * Created by win7 on 2017/3/30.
  */
 public class TcpClientHandler extends ChannelHandlerAdapter {
 
