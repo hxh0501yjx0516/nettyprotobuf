@@ -1,7 +1,0 @@
-syntax = "proto3";
-package com.lindec.netty.fileMessage.protobuf;
-option java_outer_classname = "SecureModel";
-message SecureModel {
-    string token = 1;
-    bool autoSuccess = 2;
-}

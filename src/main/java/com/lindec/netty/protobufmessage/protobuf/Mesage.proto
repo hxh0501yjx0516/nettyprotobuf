@@ -1,5 +1,6 @@
-syntax="proto3";
-option Message="Message";
-message Message_Message{
-   string message=1;
+syntax="proto2";
+package com.lindec.netty.protobufmessage.protobuf;
+option java_outer_claaname="DBMessage";
+message Message{
+   optional string message=1;
 }
