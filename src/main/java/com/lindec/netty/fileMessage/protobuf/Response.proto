@@ -1,0 +1,10 @@
+syntax = "proto3";
+package com.lindec.netty.fileMessage.protobuf;
+option java_outer_classname = "ResponseModel";
+message ResponseModel {
+    int64 start = 1;
+    string file_name = 2;
+    string file_url = 3;
+    bool end = 4;
+    int32 progress = 5;
+}

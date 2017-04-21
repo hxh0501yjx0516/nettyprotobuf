@@ -1,0 +1,12 @@
+/**
+*传送的fileproto
+*/
+syntax = "proto3";
+package com.lindec.netty.fileMessage.protobuf;
+option java_outer_classname = "Event";
+
+enum Event {
+    MESSAGE_TYPE_SECURE_MODEL = 0;
+    MESSAGE_TYPE_REQUEST_FILE = 1;
+    MESSAGE_TYPE_RESPONSE_FILE = 2;
+}
